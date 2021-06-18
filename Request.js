@@ -1,6 +1,6 @@
 const request = require('request');
  
-_EXTERNAL_URL = 'https://test-proj-heroku.herokuapp.com/api/plans';
+_EXTERNAL_URL = 'https://jsonplaceholder.typicode.com/users';
 
 const callExternalApiUsingRequest = (callback) => {
     request(_EXTERNAL_URL, { json: true }, (err, res, body) => {
